@@ -1,0 +1,106 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2c3e50; /* Dark blue-grey color */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between navbar items */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+}
+
+.navbar a:hover {
+    background-color: #34495e; /* Slightly lighter shade for hover */
+    color: #ecf0f1; /* Light grey color */
+    border-radius: 5px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4a69bd); /* Dark grey-blue gradient */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Profile Image Styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Hire Button Styling */
+.hire-button {
+    background-color: #f39c12; /* Orange color */
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.hire-button:hover {
+    background-color: #d35400; /* Darker orange */
+    color: #fff;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #4a69bd; /* Blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #3b5998; /* Darker blue */
+    color: #ecf0f1; /* Light grey color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+}
